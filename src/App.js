@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Nav from './components/nav/Nav';
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
@@ -7,7 +7,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
