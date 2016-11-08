@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <div className="App">
           <Nav/>
-          <Intro/>
+          <Intro text="Justin"/>
           <Portfolio/>
           <About/>
           <Contact/>
