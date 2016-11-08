@@ -11,7 +11,6 @@ export default class Nav extends React.Component{
                         </button>
                         <a className="navbar-brand" href="#page-top">Project Chickens</a>
                     </div>
-\
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav navbar-right">
                             <li className="hidden">
