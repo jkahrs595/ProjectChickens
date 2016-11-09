@@ -8,18 +8,18 @@ import Footer from './components/footer/Footer';
 import './App.css';
 
 class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-          <Nav/>
-          <Intro/>
-          <Portfolio/>
-          <About/>
-          <Contact/>
-          <Footer/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <Nav/>
+                <Intro/>
+                <Portfolio/>
+                <About/>
+                <Contact/>
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 export default App;

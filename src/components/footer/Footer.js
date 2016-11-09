@@ -1,8 +1,7 @@
 import React from 'react';
 
-export default class Footer extends React.Component {
-    render(){
-        return(<footer className="text-center">
+const Footer = (props) => {
+    return (<footer className="text-center">
             <div className="footer-above">
                 <div className="container">
                     <div className="row">
@@ -15,25 +14,31 @@ export default class Footer extends React.Component {
                             <h3>Around the Web</h3>
                             <ul className="list-inline">
                                 <li>
-                                    <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
+                                    <a href="#" className="btn-social btn-outline"><i
+                                        className="fa fa-fw fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-google-plus"></i></a>
+                                    <a href="#" className="btn-social btn-outline"><i
+                                        className="fa fa-fw fa-google-plus"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter"></i></a>
+                                    <a href="#" className="btn-social btn-outline"><i
+                                        className="fa fa-fw fa-twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin"></i></a>
+                                    <a href="#" className="btn-social btn-outline"><i
+                                        className="fa fa-fw fa-linkedin"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-dribbble"></i></a>
+                                    <a href="#" className="btn-social btn-outline"><i
+                                        className="fa fa-fw fa-dribbble"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <div className="footer-col col-md-4">
                             <h3>About Freelancer</h3>
-                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                            <p>Freelance is a free to use, open source Bootstrap theme created by <a
+                                href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -49,5 +54,5 @@ export default class Footer extends React.Component {
             </div>
         </footer>
     )
-    }
 }
+export default Footer;
