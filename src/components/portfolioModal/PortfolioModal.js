@@ -2,8 +2,8 @@ import React from 'react';
 
 const PortfolioModal = (props) => {
     return (
-        <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-             aria-hidden="true">
+        <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog"
+             aria-hidden={props.hidden}>
             <div className="modal-content">
                 <div className="close-modal" data-dismiss="modal">
                     <div className="lr">
@@ -15,7 +15,7 @@ const PortfolioModal = (props) => {
                     <div className="row">
                         <div className="col-lg-8 col-lg-offset-2">
                             <div className="modal-body">
-                                <h2>Project Title</h2>
+                                <h2>{props.title}</h2>
                                 <hr className="star-primary"/>
                                 <img src="img/portfolio/cabin.png" className="img-responsive img-centered" alt=""/>
                                 <p>Use this area of the page to describe your project. The icon above is part of a
