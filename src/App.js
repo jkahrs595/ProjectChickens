@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './components/nav/Nav';
+import Navigation from './components/nav/Navigation';
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
@@ -11,7 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Nav links={[Portfolio, About, Contact]}/>
+                <Navigation links={[Portfolio, About, Contact]}/>
                 <Intro/>
                 <Portfolio/>
                 <About/>
