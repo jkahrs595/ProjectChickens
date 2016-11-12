@@ -3,30 +3,30 @@ import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 const Navigation = (props) => {
     return (
-        <Navbar id="mainNav" className="navbar navbar-default navbar-fixed-top navbar-custom" collapseOnSelect>
+        <Navbar className="navbar-custom" fixedTop>
             <Navbar.Header>
-                <Navbar.Brand className="navbar-brand">
+                <Navbar.Brand>
                     <a href="#page-top">Project Chickens</a>
                 </Navbar.Brand>
-                <Navbar.Toggle className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"/>
+                <Navbar.Toggle/>
             </Navbar.Header>
-            <Navbar.Collapse id="bs-example-navbar-collapse-1">
+            <Navbar.Collapse>
                 <Nav className="nav navbar-nav navbar-right">
-                        <NavItem className="hidden" href="#page-top"/>
-                        {props.links.map((entry, index)=>{
+                    <NavItem className="hidden" href="#page-top"/>
+                    {
+                        props.links.map((entry, index)=> {
                             return (
                                 <NavItem
                                     eventKey={index}
                                     key={entry.name}
                                     className="page-scroll"
-                                    href={"#"+entry.name.toLowerCase()}>{entry.name}</NavItem>
+                                    href={"#" + entry.name.toLowerCase()}>{entry.name}</NavItem>
                             )
-                        })}
-
+                        })
+                    }
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-
     )
 };
 
