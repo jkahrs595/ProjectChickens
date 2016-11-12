@@ -16,18 +16,18 @@ const Intro = (props) => {
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
 Intro.propTypes = {
     title: React.PropTypes.string,
     skills: React.PropTypes.string,
     imgUrl: React.PropTypes.string
-}
+};
 
 Intro.defaultProps = {
     title: 'Project Chickens',
     skills: 'Software Engineer & Information Strategist',
     imgUrl: 'img/profile.png'
-}
+};
 export default Intro;

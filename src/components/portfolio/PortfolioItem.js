@@ -12,15 +12,15 @@ const PortfolioItem = (props) => {
                 <img src={props.imgUrl} className="img-responsive" alt=""/>
             </a>
         </div>
-    )
+    );
 };
 
 PortfolioItem.propTypes = {
     imgUrl: React.PropTypes.string
-}
+};
 
 PortfolioItem.defaultProps = {
     imgUrl: 'img/portfolio/cabin.png'
-}
+};
 
 export default PortfolioItem;

@@ -45,6 +45,6 @@ const PortfolioModal = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 export default PortfolioModal;

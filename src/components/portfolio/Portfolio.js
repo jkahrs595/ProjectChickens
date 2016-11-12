@@ -21,14 +21,14 @@ const Portfolio = (props) => {
                 </div>
             </div>
         </section>
-    )
+    );
 };
 
 Portfolio.propTypes = {
     title: React.PropTypes.string
-}
+};
 
 Portfolio.defaultProps = {
     title: 'Portfolio'
-}
+};
 export default Portfolio;

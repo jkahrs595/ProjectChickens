@@ -21,13 +21,13 @@ const Navigation = (props) => {
                                     key={entry.name}
                                     className="page-scroll"
                                     href={"#" + entry.name.toLowerCase()}>{entry.name}</NavItem>
-                            )
+                            );
                         })
                     }
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    )
+    );
 };
 
 Navigation.propTypes = {
@@ -35,12 +35,12 @@ Navigation.propTypes = {
     links: React.PropTypes.array.isRequired,
     navClasses: React.PropTypes.string,
     navMiniName: React.PropTypes.string
-}
+};
 
 Navigation.defaultProps = {
     title: 'Project Chickens',
     navClasses: "navbar navbar-default navbar-fixed-top navbar-custom",
     navMiniName: 'Menu'
-}
+};
 
 export default Navigation;
